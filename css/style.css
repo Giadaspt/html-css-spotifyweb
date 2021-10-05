@@ -17,7 +17,6 @@ body {
 /* all titles */
 h2 {
   color: white;
-  padding: 32px;
 }
 
 h3 {
@@ -190,10 +189,6 @@ main {
   margin: 0 auto;
 }
 
-.row h2 {
-  padding: 32px 0;
-}
-
 .album {
   width: 14%;
 }
@@ -220,13 +215,31 @@ main {
   align-content: center;
   align-items: flex-start;
   justify-content: space-between;
-  padding-bottom: 54px;
+  padding: 40px 0;
 }
 
+/* .row-two , .row-three {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 32px;
+} */
 
+.row-two .album, .row-three .album{
+  float: left;
+  margin-right: 24px;
+  padding: 32px 0;
+}
 
+.title-row p {
+  font-weight: 600;
+  padding-top: 16px;
+  padding-bottom: 24x;
+}
 
-
+.round-album img {
+  border-radius: 50%;
+}
 
 
 
