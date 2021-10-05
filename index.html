@@ -32,13 +32,15 @@
 </head>
 
 <body>
-  
+  <!-- container with aside and main -->
   <section class="container">  
+    <!-- side bar -->
     <aside>
       <div class="logo">
         <a href="#"><img src="img/logo.svg" alt="Spotify"></a>
       </div>
 
+      <!-- home, search and library -->
       <div class="side-nav"> 
         <div class="home">
           <a href="#">
@@ -52,7 +54,6 @@
             <img src="img/search.svg" alt="Search">
             <span>Cerca</span>
           </a>
-          
         </div>
 
         <div class="library">
@@ -63,6 +64,7 @@
         </div>
       </div>
 
+      <!-- plyalist (make one and list it) -->
       <div class="side-playlist">
         <h3>Playlist</h3>
         <a href="#">
@@ -81,10 +83,13 @@
         </ul>
       </div>
 
+      <!-- bottom of the sidebar with download and name profile  -->
       <div class="end-side">
         <div class="end-text1">
-          <img src="img/download.svg" alt="">
-          <span>Installa app</span> 
+          <a href="#">
+            <img src="img/download.svg" alt="">
+            <span>Installa app</span>
+          </a> 
         </div>
         <div class="side-line" ></div>
         <div class="end-text2">
@@ -92,11 +97,34 @@
           <span>John Doe</span> 
         </div>
       </div>
-
     </aside>
+    <!-- end of the sidebar -->
 
+    <!--  main content area -->
     <main>
-      <div class="top"></div>
+      <div class="top clearfix">
+        <button>
+          effettua l'upgrade
+        </button>
+      </div>
+
+      <section class="content">
+        <div class="category">
+          <ul>
+            <li><a href="#">in evidenza </a></li>
+            <li><a href="#">podcast</a></li>
+            <li><a href="#">classifiche</a></li>
+            <li><a href="#">generi e mood</a></li>
+            <li><a href="#">nuove uscite</a></li>
+            <li><a href="#">scopri</a></li>
+          </ul>
+        </div>
+
+        <div class="row-one">
+          <h2>Recently played </h2>
+        </div>
+
+      </section>
 
     </main>
     

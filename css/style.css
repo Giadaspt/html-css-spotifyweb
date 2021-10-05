@@ -8,6 +8,12 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .container {
   display: flex; 
   height: calc(100vh - 80px);
@@ -84,9 +90,12 @@ aside {
   overflow: auto;
 }
 
+/* bottom of the sidebar */
 .end-side {
   position: absolute;
   bottom: 0;
+  background-color: black;
+  padding-top: 12px;
 }
 
 .end-text1 img, .end-text2 img {
@@ -110,23 +119,56 @@ aside {
 
 .end-text2 {
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 800;
   padding: 12px 0;
 }
 
-
-.top {
-  height: 80px;
-  background-color: rgb(8,11,18);
-}
-
+/* main content */
 main {
   width: calc(100% - 250px);
   background-color: rgb(20,25,34);
+  color: rgb(163,163,163);
 }
 
+/* top of the main */
+.top {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(8,11,18);
+}
 
+/* button on the top of the main */
+.top button {
+  float: right;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: rgb(8,11,18);
+  padding: 12px 40px;
+  border-radius: 20px;
+  margin: 15px auto;
+}
+
+/* content of the main */
+.content {
+  height: calc(100% -  80px);
+}
+
+/* list of the categories you may choose */
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.category ul li {
+  display: inline-block;
+  font-weight: 600;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 24px 12px;
+}
 
 
 
