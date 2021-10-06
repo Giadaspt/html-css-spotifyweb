@@ -33,8 +33,8 @@ h5 {
 
 /* container with in inside sidebar and main */
 .container {
-  display: flex; 
-  height: calc(100vh - 80px);
+  display: flex;
+  height: calc(100vh - 100px);
 }
 
 a {
@@ -73,7 +73,7 @@ aside {
   width: 24px;
   height: 28px;
   vertical-align: middle;
-} 
+}
 
 .home, .search, .library {
   padding-bottom: 12px;
@@ -84,14 +84,13 @@ aside {
 }
 
 /* playlist, make a playlist  and list of the names of the playlist  */
-
 .side-playlist h3 {
   text-transform: uppercase;
   padding-top: 20px;
   padding-bottom: 12px;
 }
 
-.side-playlist .fas { 
+.side-playlist .fas {
   height: 40px;
   font-size: 20px;
   color: black;
@@ -243,8 +242,8 @@ main {
 /* PLAYER */
 footer {
   position: relative;
-  height: 80px;
-  color: rgb(163,163,163);
+  height: 100px;
+  color: rgb(163, 163, 163);
   background-color: rgb(40,40,40);
 }
 
@@ -260,7 +259,7 @@ footer {
   display: flex;
   align-items: center;
   align-content: center;
-} 
+}
 
 /* left side of the footer */
 .left-foot img{
@@ -277,11 +276,70 @@ footer {
   font-size: 10px;
 }
 
-.icon-foot {
-  padding-left: 30px;
-  padding-right: 24px;
+.center-foot {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
 }
 
-.icon-foot i:first-child {
-  padding-right: 16px;
+.icon-center, .time-song {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* icons of the footer */
+.icon-center i{
+  font-size: 18px;
+  padding: 0 20px;
+}
+
+.icon-center i:nth-child(3) {
+  font-size: 40px;
+}
+
+.icon-center, .icon-right {
+  color: white;
+}
+
+.icon-foot {
+  padding: 0 30px;
+}
+
+.icon-foot i {
+  padding-right: 14px;
+}
+
+/* bar of the time of the song */
+.time-song {
+  padding-top: 14px;
+}
+
+.time-song .time {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.bar, .bar2, .right-bar, .right-bar2 {
+  height: 6px;
+  background-color: rgb(163, 163, 163);
+  border-radius: 10px;
+}
+
+.bar2, .right-bar2 {
+  width: 30%;
+  background-color: white;
+}
+
+.bar {
+  width: 450px;
+  height: 6px;
+}
+
+.right-bar {
+  width: 250px;
+}
+
