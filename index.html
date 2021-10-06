@@ -41,47 +41,48 @@
       </div>
 
       <!-- home, search and library -->
-      <div class="side-nav"> 
-        <div class="home">
-          <a href="#">
-            <img src="img/home.svg" alt="Home">
-            <span>Home</span>
-          </a>
+      <div class="sidebar">
+        <div class="side-nav"> 
+          <div class="home">
+            <a href="#">
+              <img src="img/home.svg" alt="Home">
+              <span>Home</span>
+            </a>
+          </div>
+
+          <div class="search">
+            <a href="#">
+              <img src="img/search.svg" alt="Search">
+              <span>Cerca</span>
+            </a>
+          </div>
+
+          <div class="library">
+            <a href="#">
+              <img src="img/libreria.svg" alt="Library">
+              <span>La tua libreria</span>
+            </a>
+          </div>
         </div>
 
-        <div class="search">
+        <!-- plyalist (make one and list it) -->
+        <div class="side-playlist">
+          <h3>Playlist</h3>
           <a href="#">
-            <img src="img/search.svg" alt="Search">
-            <span>Cerca</span>
+            <i class="fas fa-plus"></i> 
+            <span>Crea Playlist</span> 
           </a>
+          <ul>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          </ul>
         </div>
-
-        <div class="library">
-          <a href="#">
-            <img src="img/libreria.svg" alt="Library">
-            <span>La tua libreria</span>
-          </a>
-        </div>
-      </div>
-
-      <!-- plyalist (make one and list it) -->
-      <div class="side-playlist">
-        <h3>Playlist</h3>
-        <a href="#">
-          <i class="fas fa-plus"></i> 
-          <span>Crea Playlist</span> 
-        </a>
-        
-        <ul>
-        <li><a href="#">Nome Playlist</a></li>
-        <li><a href="#">Nome Playlist</a></li>
-        <li><a href="#">Nome Playlist</a></li>
-        <li><a href="#">Nome Playlist</a></li>
-        <li><a href="#">Nome Playlist</a></li>
-        <li><a href="#">Nome Playlist</a></li>
-        <li><a href="#">Nome Playlist</a></li>
-        </ul>
-      </div>
+      </div>  
 
       <!-- bottom of the sidebar with download and name profile  -->
       <div class="end-side">
@@ -102,7 +103,7 @@
 
     <!--  main content area -->
     <main>
-      <div class="top">
+      <div class="top clearfix">
         <button>
           effettua l'upgrade
         </button>
@@ -169,7 +170,7 @@
             </p>
           </div>
           
-          <div class="row-two clearfix">
+          <div class="row-two">
             <div class="album">
               <img src="img/radar.jpeg" alt="Realease Radar">
               <h4>Realease Radar</h4>
@@ -190,7 +191,7 @@
               Più ascolti, più accurati saranno i suggerimenti
             </p>
           </div>
-          <div class="row-three clearfix">
+          <div class="row-three">
             <div class="album round-album">
               <img src="img/youg.jpeg" alt="Heavy Metal">
               <h4>Lana del Rey</h4>
@@ -211,10 +212,27 @@
     
   </section>
 
- 
-  
 
   <footer>
+    <section class="player">
+      <!-- left side of the footer -->
+      <div class="left-foot">
+        <img src="img/sinister.jpeg" alt="Sinister">
+        <div class="song">
+          <h5>Sinister</h5>
+          <p>Brano Nome</p>
+        </div>
+        <div class="icon-foot">
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
+        </div>
+      </div>
+      <!-- center of the footer -->
+      <div class="center-foot">
+
+      </div>
+      <div class="right-foot">C</div>
+    </section>
 
   </footer>
 
