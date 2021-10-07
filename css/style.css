@@ -54,13 +54,13 @@ a {
 
 /* SIDEBAR */
 aside {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
   width: 250px;
   font-size: 13px;
   font-weight: 500;
   color: rgb(163,163,163);
   background-color: rgb(0,0,0);
-
 }
 
 .logo {
@@ -82,9 +82,6 @@ aside {
 }
 
 /* top of sidebar with home, search and library */
-.side-nav {
-  padding-top: 17px;
-}
 
 .home img, .search img, .library img {
   width: 24px;
@@ -113,7 +110,8 @@ aside {
 
 /* playlist, make a playlist  and list of the names of the playlist  */
 .side-playlist {
-  max-height: calc(600px - 300px);
+  height: calc(100% - 120px) ;
+  overflow: auto;
 }
 
 .side-playlist h3 {
@@ -141,34 +139,39 @@ aside {
   padding: 12px 0;
 }
 
-.name-playlist {
-  height: 300px;
-  overflow: clip;
+.sidebar .name-playlist {
+  height: 280px;
+  overflow: auto; 
 }
 
 /* bottom of the sidebar */
 .end-side {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  height: 55px;
   width: 250px;
   background-color: black;
-  padding-top: 12px;
   padding-left: 28px;
+  padding-bottom: 96px;
+  overflow: hidden;
 }
+
+.end-text1 {
+  padding-top: 24px;
+}
+
 
 .end-text1 img, .end-text2 img {
   width: 20px;
-  line-height: 20px;
   vertical-align: middle;
   margin-right: 8px;
+  justify-content: flex-end;
 }
 
 .side-line {
   width: 200px;
   padding: 6px;
   border-bottom: 1px solid rgb(163,163,163);
+  justify-content: flex-end;
 }
 
 .end-text2 img {
@@ -182,6 +185,7 @@ aside {
   font-size: 14px;
   font-weight: 800;
   padding: 12px 0;
+  justify-content: flex-end;
 }
 
 /* main content */
@@ -484,11 +488,11 @@ footer {
     margin-right: 14px;
     padding-top: 12px;
   }
-  
+
   .song p {
     font-size: 11px;
   }
-  
+
   .left-foot img{
     width: 80px;
     padding-right: 16px;
@@ -527,69 +531,69 @@ footer {
   .album-text {
     padding-bottom: 10px;
   }
-  
+
   .song p {
     font-size: 13px;
   }
-  
+
   .left-foot img{
     width: 80px;
     padding-right: 16px;
   }
-  
+
   .song p {
     font-size: 12px;
   }
-  
+
   .icon-center i{
     font-size: 18px;
     padding: 0 16px;
   }
-  
+
   .icon-left {
     padding-left: 26px;
     padding-right: 0;
   }
-  
+
   .icon-foot {
     font-size: 18px;
   }
-  
+
   .icon-foot i {
     padding-right: 18px;
   }
-  
+
   .bar {
     width: 380px;
   }
-  
+
   .volume-bar {
     width: 120px;
   }
-  
+
   .bar, .bar2, .volume-bar, .volume-bar2 {
     height: 6px;
   }
-  
+
   .bar2 {
     width: 120px;
   }
-  
+
   .volume-bar2 {
     width: 40px;
   }
-  
+
   .dot {
     width: 14px;
     height: 14px;
   }
-  
+
   .bar2 .dot {
     position: absolute;
     left: 120px;
     top: -4px;
   }
-    
+
   .volume-bar2 .dot {
     position: absolute;
     left: 40px;
@@ -641,11 +645,11 @@ footer {
   .album-text {
     padding-bottom: 16px;
   }
-  
+
   footer {
   height: 100px;
   }
-  
+
   h5 {
     font-size: 14px;
   }
@@ -653,79 +657,79 @@ footer {
   .song p {
     font-size: 12px;
   }
-  
+
   .player {
     padding-top: 12px;
   }
-  
+
   .left-foot img{
     width: 70px;
     padding-right: 8px;
   }
-  
+
   .song p {
     font-size: 10px;
   }
-  
+
   .icon-center i{
     font-size: 16px;
     padding: 0 16px;
   }
-  
+
   .icon-center i:nth-child(3) {
     font-size: 40px;
   }
-  
+
   .icon-left {
     padding-left: 26px;
     padding-right: 0;
   }
-  
+
   .icon-foot {
     font-size: 17px;
   }
-  
+
   .icon-foot i {
     padding-right: 16px;
   }
-  
+
   .time-song .time {
     font-size: 14px;
     padding-left: 24px;
     padding-right: 24px;
   }
-  
+
   .bar {
     width: 350px;
   }
-  
+
   .volume-bar {
     width: 90px;
   }
-  
+
   .bar, .bar2, .volume-bar, .volume-bar2 {
     height: 5px;
   }
-  
+
   .bar2 {
     width: 96px;
   }
-  
+
   .volume-bar2 {
     width: 36px;
   }
-  
+
   .dot {
     width: 12px;
     height: 12px;
   }
-  
+
   .bar2 .dot {
     position: absolute;
     left: 96px;
     top: -3px;
   }
-    
+
   .volume-bar2 .dot {
     position: absolute;
     left: 36px;
@@ -773,11 +777,11 @@ footer {
   .album-text {
     padding-bottom: 16px;
   }
-  
+
   footer {
   height: 90px;
   }
-  
+
   h5 {
     font-size: 13.5px;
   }
@@ -785,79 +789,79 @@ footer {
   .song p {
     font-size: 10px;
   }
-  
+
   .player {
     padding-top: 10px;
   }
-  
+
   .left-foot img{
     width: 60px;
     padding-right: 8px;
   }
-  
+
   .song p {
     font-size: 10px;
   }
-  
+
   .icon-center i{
     font-size: 15px;
     padding: 0 14px;
   }
-  
+
   .icon-center i:nth-child(3) {
     font-size: 36px;
   }
-  
+
   .icon-left {
     padding-left: 18px;
     padding-right: 0;
   }
-  
+
   .icon-foot {
     font-size: 16px;
   }
-  
+
   .icon-foot i {
     padding-right: 12px;
   }
-  
+
   .time-song .time {
     font-size: 13px;
     padding-left: 18px;
     padding-right: 16px;
   }
-  
+
   .bar {
     width: 240px;
   }
-  
+
   .volume-bar {
     width: 70px;
   }
-  
+
   .bar, .bar2, .volume-bar, .volume-bar2 {
     height: 5px;
   }
-  
+
   .bar2 {
     width: 80px;
   }
-  
+
   .volume-bar2 {
     width: 30px;
   }
-  
+
   .dot {
     width: 11px;
     height: 11px;
   }
-  
+
   .bar2 .dot {
     position: absolute;
     left: 80px;
     top: -3px;
   }
-    
+
   .volume-bar2 .dot {
     position: absolute;
     left: 30px;
@@ -890,91 +894,91 @@ footer {
     padding-top: 12px;
   }
 
-  
+
   .last-album {
     visibility: visible;
   }
-  
+
   footer {
   height: 80px;
   }
-  
+
   h5 {
     font-size: 12px;
   }
-  
+
   .player {
     padding-top: 12px;
   }
-  
+
   .left-foot img{
     width: 50px;
     padding-right: 8px;
   }
-  
+
   .song p {
     font-size: 10px;
   }
-  
+
   .icon-center i{
    font-size: 14px;
     padding: 0 14px;
   }
-  
+
   .icon-center i:nth-child(3) {
     font-size: 34px;
   }
-  
+
   .icon-left {
     padding-left: 18px;
     padding-right: 0;
   }
-  
+
   .icon-foot {
     font-size: 14px;
   }
-  
+
   .icon-foot i {
     padding-right: 8px;
   }
-  
+
   .time-song .time {
     font-size: 12px;
     padding-left: 18px;
     padding-right: 16px;
   }
-  
+
   .bar {
     width: 200px;
   }
-  
+
   .volume-bar {
     width: 80px;
   }
-  
+
   .bar, .bar2, .volume-bar, .volume-bar2 {
     height: 3px;
   }
-  
+
   .bar2 {
     width: 50px;
   }
-  
+
   .volume-bar2 {
     width: 20px;
   }
-  
+
   .dot {
     width: 8px;
     height: 8px;
   }
-  
+
   .bar2 .dot {
     position: absolute;
     left: 50px;
     top: -3px;
   }
-    
+
   .volume-bar2 .dot {
     position: absolute;
     left: 20px;
@@ -987,7 +991,7 @@ footer {
   .container {
     height: calc(100vh - 80px);
   }
-  
+
   aside {
     width: 50px;
   }
@@ -1052,7 +1056,7 @@ footer {
     padding-top: 12px;
   }
 
-  
+
   .last-album {
     visibility: visible;
   }
@@ -1136,7 +1140,7 @@ footer {
     left: 30px;
     top: -3px;
   }
-  
+
   .volume-bar2 .dot {
     position: absolute;
     left: 10px;
