@@ -475,10 +475,254 @@ footer {
 }
 
 /* MEDIA QUERY */
+@media (max-width:992px) {
+  .container {
+    height: calc(100vh - 90px);
+  }
+
+  .end-side {
+    height: 24px;
+  }
+
+  .category ul li {
+    font-size: 14px;
+    padding: 14px 10px;
+  }
+
+  .active-2 {
+    height: 2px;
+    width: 30px;
+  }
+
+  .row h2 {
+    padding-top: 32px;
+  }
+
+  .album {
+    min-width: 30%;
+    margin-right: 16px;
+    padding-top: 12px;
+  }
+
+  .album-text h4 {
+    font-size: 14px;
+  }
+
+  .album-text {
+    padding-bottom: 16px;
+  }
+  
+  footer {
+  height: 90px;
+  }
+  
+  h5 {
+    font-size: 13.5px;
+  }
+
+  .song p {
+    font-size: 10px;
+  }
+  
+  .player {
+    padding-top: 10px;
+  }
+  
+  .left-foot img{
+    width: 60px;
+    padding-right: 8px;
+  }
+  
+  .song p {
+    font-size: 10px;
+  }
+  
+  .icon-center i{
+    font-size: 15px;
+    padding: 0 14px;
+  }
+  
+  .icon-center i:nth-child(3) {
+    font-size: 36px;
+  }
+  
+  .icon-left {
+    padding-left: 18px;
+    padding-right: 0;
+  }
+  
+  .icon-foot {
+    font-size: 16px;
+  }
+  
+  .icon-foot i {
+    padding-right: 12px;
+  }
+  
+  .time-song .time {
+    font-size: 13px;
+    padding-left: 18px;
+    padding-right: 16px;
+  }
+  
+  .bar {
+    width: 240px;
+    height: 3px;
+  }
+  
+  .volume-bar {
+    width: 70px;
+  }
+  
+  .bar, .bar2, .volume-bar, .volume-bar2 {
+    height: 5px;
+  }
+  
+  .bar2 {
+    width: 80px;
+  }
+  
+  .volume-bar2 {
+    width: 30px;
+  }
+  
+  .dot {
+    width: 11px;
+    height: 11px;
+  }
+  
+  .bar2 .dot {
+    position: absolute;
+    left: 80px;
+    top: -3px;
+  }
+    
+  .volume-bar2 .dot {
+    position: absolute;
+    left: 30px;
+    top: -3px;
+  }
+}
+
+@media (max-width:768px) {
+  .container {
+    height: calc(100vh - 80px);
+  }
+
+  .end-side {
+    height: 24px;
+  }
+
+  .category ul li {
+    font-size: 12px;
+    padding: 14px 10px;
+  }
+
+  .active-2 {
+    height: 2px;
+    width: 30px;
+  }
+
+  .album {
+    min-width: 44%;
+    margin-right: 16px;
+    padding-top: 12px;
+  }
+  
+  footer {
+  height: 80px;
+  }
+  
+  h5 {
+    font-size: 12px;
+  }
+  
+  .player {
+    padding-top: 12px;
+  }
+  
+  .left-foot img{
+    width: 50px;
+    padding-right: 8px;
+  }
+  
+  .song p {
+    font-size: 10px;
+  }
+  
+  .icon-center i{
+   font-size: 14px;
+    padding: 0 14px;
+  }
+  
+  .icon-center i:nth-child(3) {
+    font-size: 34px;
+  }
+  
+  .icon-left {
+    padding-left: 18px;
+    padding-right: 0;
+  }
+  
+  .icon-foot {
+    font-size: 14px;
+  }
+  
+  .icon-foot i {
+    padding-right: 8px;
+  }
+  
+  .time-song .time {
+    font-size: 12px;
+    padding-left: 18px;
+    padding-right: 16px;
+  }
+  
+  .bar {
+    width: 200px;
+    height: 3px;
+  }
+  
+  .volume-bar {
+    width: 80px;
+  }
+  
+  .bar, .bar2, .volume-bar, .volume-bar2 {
+    height: 3px;
+  }
+  
+  .bar2 {
+    width: 50px;
+  }
+  
+  .volume-bar2 {
+    width: 20px;
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .bar2 .dot {
+    position: absolute;
+    left: 50px;
+    top: -3px;
+  }
+    
+  .volume-bar2 .dot {
+    position: absolute;
+    left: 20px;
+    top: -3px;
+  }
+}
+
+
 @media (max-width:576px) {
   .container {
     height: calc(100vh - 80px);
   }
+  
   aside {
     width: 50px;
   }
@@ -500,7 +744,7 @@ footer {
   }
 
   .end-side{
-    height: 92px;
+    height: 100px;
     width: 50px;
     padding-left: 12px;
   }
@@ -519,7 +763,7 @@ footer {
   }
 
   .content {
-    height: calc(100% - 60px);
+    height: calc(100% - 80px);
     padding-top: 60px;
   }
 
@@ -538,7 +782,7 @@ footer {
   }
 
   .album {
-    width: 46%;
+    min-width: 40%;
     margin-right: 16px;
     padding-top: 12px;
   }
@@ -556,7 +800,6 @@ footer {
     padding-top: 8px;
   }
 
-  /* left side of the footer */
   .left-foot img{
     width: 38px;
     padding-right: 8px;
@@ -566,7 +809,6 @@ footer {
     font-size: 8px;
   }
 
-  /* icons of the footer */
   .icon-center i{
     font-size: 12px;
     padding: 0 10px;
@@ -577,7 +819,7 @@ footer {
   }
 
   .icon-left {
-    padding: 0 15px;
+    padding: 0 12px;
   }
 
   .icon-foot {
@@ -588,18 +830,12 @@ footer {
     padding-right: 7px;
   }
 
-  /* bar of the time of the song */
-  /* .time-song {
-    padding-top: 14px;
-  } */
-
   .time-song .time {
     font-size: 8px;
     padding-left: 14px;
     padding-right: 14px;
   }
 
-  /* bars of the time of the song and the volume*/
   .bar {
     width: 170px;
     height: 3px;
@@ -639,7 +875,3 @@ footer {
 
 }
 
-@media (max-width:768px) {
-
-  
-}
