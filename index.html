@@ -42,8 +42,9 @@
 
       <!-- home, search and library -->
       <div class="sidebar">
-        <div class="side-nav "> 
+        <div class="side-nav">
           <div class="home pass-on">
+            <div class="active"></div>
             <a href="#">
               <img src="img/home.svg" alt="Home">
               <span>Home</span>
@@ -68,20 +69,22 @@
         <!-- plyalist (make one and list it) -->
         <div class="side-playlist">
           <h3>Playlist</h3>
-          <div class="name-playlist pass-on">
+          <div class="pass-on">
             <a href="#">
               <i class="fas fa-plus"></i> 
               <span>Crea Playlist</span> 
             </a>
-            <ul>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            </ul>
+            <div class="name-playlist">
+              <ul>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              </ul>
+          </div>
           </div>
         </div>
       </div>  
@@ -113,8 +116,11 @@
 
       <section class="content">
         <div class="category pass-on">
+          
           <ul>
-            <li><a href="#">in evidenza </a></li>
+            <li><a href="#">in evidenza</a>
+              <div class="active-2"></div>
+            </li>
             <li><a href="#">podcast</a></li>
             <li><a href="#">classifiche</a></li>
             <li><a href="#">generi e mood</a></li>
@@ -304,7 +310,10 @@
         <div class="time-song">
           <div class="time">0:25</div> 
           <div class="bar">
-            <div class="bar2"></div>
+            <div class="bar2">
+              <div class="dot"></div>
+            </div>
+            
           </div>
           <div class="time">4:35</div>
         </div>
@@ -317,7 +326,9 @@
           <i class="fas fa-volume-up"></i>
         </div>
         <div class="volume-bar">
-          <div class="volume-bar2"></div>
+          <div class="volume-bar2">
+            <div class="dot"></div>
+          </div>
         </div>
       </div>
     </section>

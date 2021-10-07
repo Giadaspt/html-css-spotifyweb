@@ -54,23 +54,24 @@ a {
 
 /* SIDEBAR */
 aside {
-  /* position: relative; */
   height: 100%;
   width: 250px;
   font-size: 13px;
   font-weight: 500;
   color: rgb(163,163,163);
   background-color: rgb(0,0,0);
-  padding-left: 28px;
-  padding-top: 20px;
+
 }
 
 .logo {
-  width: 130px;
+  width: 170px;
+  margin-left: 28px;
+  margin-top: 20px;
 }
 
 .sidebar {
-  height: calc(100% - 100px);
+  height: calc(100% - 130px);
+  margin-left: 28px;
 }
 
 /* top of sidebar with home, search and library */
@@ -89,10 +90,25 @@ aside {
 }
 
 .home {
+  position: relative;
   color: white;
 }
 
+.side-nav .active {
+  height: 3px;
+  width: 30px;
+  background-color: yellowgreen;
+  transform: rotate(90deg);
+  position: absolute;
+  left: -40px;
+  top: 14px;
+}
+
 /* playlist, make a playlist  and list of the names of the playlist  */
+.side-playlist {
+  max-height: calc(600px - 300px);
+}
+
 .side-playlist h3 {
   text-transform: uppercase;
   padding-top: 20px;
@@ -119,18 +135,20 @@ aside {
 }
 
 .name-playlist {
-  max-height: 400px;
-  overflow: auto;
+  height: 300px;
+  overflow: clip;
 }
 
 /* bottom of the sidebar */
 .end-side {
-  height: 60px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  height: 55px;
+  width: 250px;
   background-color: black;
   padding-top: 12px;
+  padding-left: 28px;
 }
 
 .end-text1 img, .end-text2 img {
@@ -173,6 +191,7 @@ main {
   height: 80px;
   width: 100%;
   background-color: rgba(8,0,0, .5);
+  z-index: 99;
 }
 
 /* button on the top of the main */
@@ -201,9 +220,8 @@ button:hover {
 /* list of the categories you may choose */
 .category {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  text-justify: center;
+  text-align: center;
 }
 
 .category ul li {
@@ -214,6 +232,14 @@ button:hover {
   padding: 24px 12px;
 }
 
+.active-2 {
+  height: 3px;
+  width: 60px;
+  background-color: yellowgreen;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
 /* first row (recently played) */
 .row {
   width: 95%;
@@ -221,14 +247,14 @@ button:hover {
 }
 
 .album {
-  width: 230px;
-  margin-right: 24px;
+  position: relative;
+  width: 15%;
+  margin-right: 20px;
   padding-top: 10px;
 }
 
 .cover-album {
   position: relative;
-  width: 100%;
 }
 
 .cover-album img {
@@ -256,6 +282,8 @@ button:hover {
 
 .cover-album:hover .play{
   visibility: visible;
+  transition: 1s ease;
+  opacity: .5;
 }
 
 .album-text h4 {
@@ -303,6 +331,7 @@ footer {
   height: 100px;
   color: rgb(163, 163, 163);
   background-color: rgb(40,40,40);
+  z-index: 199;
 }
 
 .player {
@@ -360,7 +389,7 @@ footer {
   color: white;
 }
 
-.icon-foot {
+.icon-left {
   padding: 0 30px;
 }
 
@@ -382,17 +411,6 @@ footer {
 }
 
 /* bars of the time of the song and the volume*/
-.bar, .bar2, .volume-bar, .volume-bar2 {
-  height: 6px;
-  background-color: rgb(163, 163, 163);
-  border-radius: 10px;
-}
-
-.bar2, .volume-bar2 {
-  width: 30%;
-  background-color: white;
-}
-
 .bar {
   width: 450px;
   height: 6px;
@@ -401,4 +419,54 @@ footer {
 .volume-bar {
   width: 250px;
 }
+.bar, .bar2, .volume-bar, .volume-bar2 {
+  height: 6px;
+  background-color: rgb(163, 163, 163);
+  border-radius: 10px;
+}
+
+.bar2 {
+  position: relative;
+  width: 100px;
+  background-color: white;
+  position: absolute;
+}
+
+.volume-bar2 {
+  position: relative;
+  width: 50px;
+  background-color: white;
+  position: absolute;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  visibility: hidden;
+}
+
+.bar2 .dot {
+  position: absolute;
+  left: 100px;
+  top: -3px;
+}
+
+.volume-bar2 .dot {
+  position: absolute;
+  left: 50px;
+  top: -3px;
+}
+
+
+.bar2:hover, .volume-bar2:hover{
+  background-color: yellowgreen;
+}
+
+.bar2:hover .dot, .volume-bar2:hover .dot {
+  visibility: visible;
+}
+
+
 
