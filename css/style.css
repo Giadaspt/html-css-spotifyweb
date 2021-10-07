@@ -420,7 +420,6 @@ footer {
 /* bars of the time of the song and the volume*/
 .bar {
   width: 450px;
-  height: 6px;
 }
 
 .volume-bar {
@@ -475,6 +474,265 @@ footer {
 }
 
 /* MEDIA QUERY */
+@media (min-width:1401px) {
+  .end-side {
+    height: 28px;
+  }
+
+  .album {
+    min-width: 15%;
+    margin-right: 14px;
+    padding-top: 12px;
+  }
+  
+  .song p {
+    font-size: 11px;
+  }
+  
+  .left-foot img{
+    width: 80px;
+    padding-right: 16px;
+  }
+
+}
+
+@media (max-width:1400px) {
+  .end-side {
+    height: 24px;
+  }
+
+  .category ul li {
+    font-size: 16px;
+    padding: 14px 10px;
+  }
+
+  .row-one {
+    padding: 20px 0;
+  }
+
+  .row h2 {
+    padding-top: 20px;
+  }
+
+  .album {
+    min-width: 15%;
+    margin-right: 14px;
+    padding-top: 12px;
+  }
+
+  .album-text h4 {
+    font-size: 16px;
+  }
+
+  .album-text {
+    padding-bottom: 10px;
+  }
+  
+  .song p {
+    font-size: 13px;
+  }
+  
+  .left-foot img{
+    width: 80px;
+    padding-right: 16px;
+  }
+  
+  .song p {
+    font-size: 12px;
+  }
+  
+  .icon-center i{
+    font-size: 18px;
+    padding: 0 16px;
+  }
+  
+  .icon-left {
+    padding-left: 26px;
+    padding-right: 0;
+  }
+  
+  .icon-foot {
+    font-size: 18px;
+  }
+  
+  .icon-foot i {
+    padding-right: 18px;
+  }
+  
+  .bar {
+    width: 380px;
+  }
+  
+  .volume-bar {
+    width: 120px;
+  }
+  
+  .bar, .bar2, .volume-bar, .volume-bar2 {
+    height: 6px;
+  }
+  
+  .bar2 {
+    width: 120px;
+  }
+  
+  .volume-bar2 {
+    width: 40px;
+  }
+  
+  .dot {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .bar2 .dot {
+    position: absolute;
+    left: 120px;
+    top: -4px;
+  }
+    
+  .volume-bar2 .dot {
+    position: absolute;
+    left: 40px;
+    top: -4px;
+  }
+}
+
+@media (max-width:1200px) {
+  .container {
+    height: calc(100vh - 100px);
+  }
+
+  .end-side {
+    height: 24px;
+  }
+
+  .category ul li {
+    font-size: 16px;
+    padding: 14px 10px;
+  }
+
+  .active-2 {
+    height: 3px;
+    width: 50px;
+  }
+
+  .row-one {
+    padding: 20px 0;
+  }
+
+  .row h2 {
+    padding-top: 16px;
+  }
+
+  .album {
+    min-width: 22%;
+    margin-right: 16px;
+    padding-top: 12px;
+  }
+
+  .last-album {
+    visibility: collapse;
+  }
+
+  .album-text h4 {
+    font-size: 16px;
+  }
+
+  .album-text {
+    padding-bottom: 16px;
+  }
+  
+  footer {
+  height: 100px;
+  }
+  
+  h5 {
+    font-size: 14px;
+  }
+
+  .song p {
+    font-size: 12px;
+  }
+  
+  .player {
+    padding-top: 12px;
+  }
+  
+  .left-foot img{
+    width: 70px;
+    padding-right: 8px;
+  }
+  
+  .song p {
+    font-size: 10px;
+  }
+  
+  .icon-center i{
+    font-size: 16px;
+    padding: 0 16px;
+  }
+  
+  .icon-center i:nth-child(3) {
+    font-size: 40px;
+  }
+  
+  .icon-left {
+    padding-left: 26px;
+    padding-right: 0;
+  }
+  
+  .icon-foot {
+    font-size: 17px;
+  }
+  
+  .icon-foot i {
+    padding-right: 16px;
+  }
+  
+  .time-song .time {
+    font-size: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  
+  .bar {
+    width: 350px;
+  }
+  
+  .volume-bar {
+    width: 90px;
+  }
+  
+  .bar, .bar2, .volume-bar, .volume-bar2 {
+    height: 5px;
+  }
+  
+  .bar2 {
+    width: 96px;
+  }
+  
+  .volume-bar2 {
+    width: 36px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+  }
+  
+  .bar2 .dot {
+    position: absolute;
+    left: 96px;
+    top: -3px;
+  }
+    
+  .volume-bar2 .dot {
+    position: absolute;
+    left: 36px;
+    top: -3px;
+  }
+}
+
 @media (max-width:992px) {
   .container {
     height: calc(100vh - 90px);
@@ -502,6 +760,10 @@ footer {
     min-width: 30%;
     margin-right: 16px;
     padding-top: 12px;
+  }
+
+  .last-album {
+    visibility: visible;
   }
 
   .album-text h4 {
@@ -567,7 +829,6 @@ footer {
   
   .bar {
     width: 240px;
-    height: 3px;
   }
   
   .volume-bar {
@@ -628,6 +889,11 @@ footer {
     margin-right: 16px;
     padding-top: 12px;
   }
+
+  
+  .last-album {
+    visibility: visible;
+  }
   
   footer {
   height: 80px;
@@ -680,7 +946,6 @@ footer {
   
   .bar {
     width: 200px;
-    height: 3px;
   }
   
   .volume-bar {
@@ -787,6 +1052,11 @@ footer {
     padding-top: 12px;
   }
 
+  
+  .last-album {
+    visibility: visible;
+  }
+
   footer {
   height: 80px;
   }
@@ -838,11 +1108,12 @@ footer {
 
   .bar {
     width: 170px;
-    height: 3px;
   }
+
   .volume-bar {
     width: 40px;
   }
+
   .bar, .bar2, .volume-bar, .volume-bar2 {
     height: 3px;
   }
